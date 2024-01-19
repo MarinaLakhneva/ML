@@ -13,19 +13,19 @@ from sklearn.datasets import load_diabetes
 # X = load_breast_cancer()["data"]
 # y = load_breast_cancer()["target"]
 #######################################################################################################################
-data = pd.read_csv("data/house_prices.csv")
-print(data)
-
-X = data.drop(["MEDV"], axis=1).values
-y = data["MEDV"].values
-#######################################################################################################################
-# data = pd.read_csv("data/product_NDI.csv")
+# data = pd.read_csv("data/house_prices.csv")
 # print(data)
 #
-# X = data.drop(["product"], axis=1)
-# X = X.drop(["target"], axis=1).values
-#
-# y = data["target"].values
+# X = data.drop(["MEDV"], axis=1).values
+# y = data["MEDV"].values
+#######################################################################################################################
+data = pd.read_csv("data/product_NDI.csv")
+print(data)
+
+X = data.drop(["product"], axis=1)
+X = X.drop(["target"], axis=1).values
+
+y = data["target"].values
 
 print(X)
 print(X.shape)
