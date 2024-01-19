@@ -43,12 +43,14 @@ np.random.seed(42)
 model = GB.GradientBoostingRegressorFromScratch()
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
+print("y_test: ", [round(i, 2) for i in y_test])
+print("y_pred: ", [round(i, 2) for i in y_pred])
 
 tree = TREE.DecisionTreeRegressorFromScratch()
-print(tree.mse(y_test, y_pred))
+print("my_mse = ", tree.mse(y_test, y_pred))
 CHARTS.plot_two_ys(y_pred, y_test)
 
 from sklearn.ensemble import GradientBoostingRegressor
 sklearn_model = GradientBoostingRegressor()
 sklearn_model.fit(X_train, y_train)
-print(tree.mse(y_test, sklearn_model.predict(X_test)))
+print("sklearn_mse = ", tree.mse(y_test, sklearn_model.predict(X_test)))
