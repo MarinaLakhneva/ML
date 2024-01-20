@@ -1,4 +1,4 @@
-﻿G/B,age,weight,height,NDI,product,protein,fats,carbohydrates,calories,target
+﻿G/B,age,weight,height,activity,product,protein,fats,carbohydrates,calories,target
 1,21,50,158,1.55,яблоко,0.26,0.17,13.81,52,0.18
 1,45,96,160,1.38,курица запеченая,28.93,7.41,0,190,0.14
 1,46,65,164,1.2,слойка с печенью,8.7,16.5,25.9,288,0.15
