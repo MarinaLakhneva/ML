@@ -11,7 +11,7 @@ import numpy as np
 #     return np.mean(np.power(y_true - y_pred, 2)) #возводим в квадрат, потому что не хотим больше/меньше прогнозировать
 #
 #   def predict(self, X):
-#     return np.zeros(X.shape[0]) #заполняем массив 0
+#     return np.zeros(X.shape[0]) #заполняем массив 0 (X.shape[0] - количество столбцов)
 #######################################################2###############################################################
 # class DecisionTreeRegressorFromScratch:
 #   def fit(self, X, y):
